@@ -544,6 +544,7 @@ details[open] summary {
           font-size: 14px;}
           .image{
             background-attachment: initial;
+              background-size: cover;
           }
           .image_cont, .image{
             height: 200px;
