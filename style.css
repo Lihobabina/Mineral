@@ -300,7 +300,7 @@ background-attachment: fixed;
 .topic .row2{
 width: 100%;
 display: flex;
-column-gap: 25px;
+column-gap: 200px;
 }
 .topic .row2 .col{
   width: 50%;
@@ -308,6 +308,19 @@ column-gap: 25px;
   flex-wrap: wrap;
   text-align: left;
   color: #ececec;
+}
+.topic .col h4{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  list-style-type: none;
+  font-size: 17px;
+  color: #ececec;
+  font-weight: 400;
+}
+.topic .row2 img{
+  width: 15%;
+  margin-bottom: 15px;
 }
 .topic .row2 .col p{
   text-align: left;
@@ -383,13 +396,9 @@ column-gap: 25px;
   width: 50%;
 }
 .topic2 a{
-  color: #050505;
-  text-decoration: none;
-  display: flex;
-  align-items: flex-end;
-  margin-top: 25px;
-  font-size: 20px;
-  font-weight: 500;
+  display: block;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 .topic2 a img{
   width: 35px;
@@ -429,6 +438,76 @@ details[open] {
 
 details[open] summary {
   border-bottom: 1px solid transparent;
+}
+.topic3{
+  padding: 40px;
+}
+
+.topic3 div{
+  width: 100%;
+  text-align: center;
+}
+.topic3 h2{
+  text-align: left;
+}
+.topic3 div img{
+  margin-bottom: 15px;
+}
+.topic3 h2{
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.topic3 h4{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.topic3 p{
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.topic3 span{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: block;
+}
+.topic3 .row{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 60px;
+}
+
+.topic3 a{
+  display: block;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+footer{
+  padding: 0 40px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #050505;
+}
+footer svg{
+  height: 40px;
+  width: 40px;
+}
+footer img{
+  height: 70px;
+}footer div{
+  display: flex;
+  column-gap: 20px;
+}
+footer div a{
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+  color: #ececec;
+  text-decoration: none;
 }
 @media (max-width:1123px){
   .about_row-col p{
@@ -519,7 +598,7 @@ details[open] summary {
   }
   .info_col h4, .topic p, .topic .row2 .col li, .topic .row2 .col h4, .topic2 .row p, .topic2 .row li, .topic2 .row2 .col {
     font-size: 14px;}
-    .services h2, .benefits h2, .topic h2, .topic2 h2, .faq h2 {
+    .services h2, .benefits h2, .topic h2, .topic2 h2, .faq h2, .topic3 h2 {
       font-size: 24px;
       margin-bottom: 15px;}
       .img_circle img {
@@ -566,4 +645,56 @@ details[open] summary {
             flex-wrap: nowrap;
             column-gap: 15px;
           }
+          .topic .row2 img {
+            width: 30%;}
+}
+.swiper{
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+.swiper-slide img{
+  width: 100%;
+  object-fit: contain;
+}
+@media (max-width: 770px){
+
+    .topic3 div img{
+      width: 100%;
+    }
+    footer{
+      padding: 0 15px;
+    }
+    footer svg {
+      height: 25px;
+    }
+    footer div {
+      column-gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .topic3 {
+      padding: 15px;
+    }
+    .topic .col h4, .topic3 p, footer div a{
+      font-size: 14px;
+    }
+    .topic .row2 img {
+      width: 75%;
+    }
+    .topic2 a, .topic3 a {
+      font-size: 19px;}
+      .topic3 h4 {
+        font-size: 15px;}
+        .topic3 span{
+          font-size: 18px;
+        }
+        footer img {
+          height: 45px;
+        }
+        footer div {
+          column-gap: 10px;
+          flex-wrap: wrap;
+          justify-content: end;
+        }
 }
