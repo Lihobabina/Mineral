@@ -509,6 +509,76 @@ footer div a{
   color: #ececec;
   text-decoration: none;
 }
+.topic4, .topic5{
+padding: 40px;
+}
+.topic4 h2,  .topic5 h2{
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.topic4 ol li{
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.topic4 .row{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.topic4 .row img{
+  width: 20%;
+  object-fit: cover;
+}
+.topic5 .row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.topic5 .row img{
+  width: 24%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.topic5 p{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.topic5 span{
+  font-weight: 600;
+  font-style: italic;
+  display: block;
+  margin-bottom: 15px;
+}
+.topic5 .row2{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.topic5 .row2 img{
+  width: 49%;
+}
+.topic5 .row2 div{
+  width: 50%;
+}
+.blue{
+  color: blue;
+  font-size: 20px;
+}
+.topic5 ol li{
+  font-size: 18px;
+}
+.topic5 .row img.w49{
+  width: 49%;
+  height: auto;
+}
+.w30{
+  width: 32%;
+  height: 230px;
+}
 @media (max-width:1123px){
   .about_row-col p{
     width: 100%;
@@ -554,6 +624,15 @@ footer div a{
   .topic2 .row2 img {
     width: 75%;
   }
+  .topic5 .row img{
+    width: 32%;
+  }
+  .topic5 .row2{
+    flex-wrap: wrap;
+  }
+  .topic5 .row2 img, .topic5 .row2 div{
+    width: 100%;
+  }
 }
 @media (max-width:770px){
   .banner {
@@ -584,7 +663,7 @@ footer div a{
   .about_row-col p{
     text-align: left;
   }
-  .about_us,.info_row,.services, .benefits, .topic, .topic2, .faq {
+  .about_us,.info_row,.services, .benefits, .topic, .topic2, .faq, .topic4, .topic5{
     padding: 15px;
   }
   .about_row-col span {
@@ -596,9 +675,9 @@ footer div a{
   .about_row{
     gap: 15px;
   }
-  .info_col h4, .topic p, .topic .row2 .col li, .topic .row2 .col h4, .topic2 .row p, .topic2 .row li, .topic2 .row2 .col {
+  .info_col h4, .topic p, .topic .row2 .col li, .topic .row2 .col h4, .topic2 .row p, .topic2 .row li, .topic2 .row2 .col, .topic4 ol li, .topic5 p, .topic5 span, .topic5 ol li {
     font-size: 14px;}
-    .services h2, .benefits h2, .topic h2, .topic2 h2, .faq h2, .topic3 h2 {
+    .services h2, .benefits h2, .topic h2, .topic2 h2, .faq h2, .topic3 h2, .topic4 h2, .topic5 h2 {
       font-size: 24px;
       margin-bottom: 15px;}
       .img_circle img {
@@ -647,6 +726,16 @@ footer div a{
           }
           .topic .row2 img {
             width: 30%;}
+            .topic5 .row2{
+              row-gap: 15px;
+            }
+            .topic5 .row img{
+              width: 100%;
+              height: auto;
+            }
+            .topic4 ol li{
+              margin-left: 15px;
+            }
 }
 .swiper{
   margin-top: 40px;
