@@ -637,6 +637,9 @@ padding: 40px;
     margin-left: 15px;
   }
 }
+.topic3 div img{
+  width: 100%;
+}
 @media (max-width:770px){
   .banner {
     height: 50px;
@@ -790,4 +793,3 @@ padding: 40px;
     justify-content: end;
   }
 }
-
